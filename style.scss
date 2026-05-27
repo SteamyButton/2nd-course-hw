@@ -1,0 +1,262 @@
+$mainColor: rgba(225, 255, 143, 1);
+$secondColor: rgba(32, 32, 39, 1);
+$thirdColor: rgba(255, 255, 255, 1);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+a,
+input,
+button,
+select {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;        
+    position: relative;
+    height: 710px;
+    background-color: $mainColor;
+    padding-top: 196px;
+    padding-bottom: 156px;
+    overflow: hidden;
+    &__star {
+        position: absolute;        
+        &_1 {        
+            left: 63px;
+            top: 94px;
+        }
+
+        &_2 {
+            left: 156px;
+            top: 69px;
+        }
+
+        &_3 {        
+            right: 455px;
+            bottom: 135px;
+        }
+
+        &_4 {
+            right: 344px;
+            bottom: 59px;
+        }
+
+        &_big {
+            right: -488px;
+            top: -333px;        
+        }
+    }
+
+    &__header {
+        color: $secondColor;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        text-align: left;
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        color: $secondColor;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+        margin-bottom: 48px;        
+    }
+
+    &__button {
+        width: 247px;
+        height: 66px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 16px 28px 16px 28px;
+        border: 1px solid rgba(32, 32, 39, 1);
+        border-radius: 60px;
+        background-color: $secondColor;
+        color: $thirdColor;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%;
+        text-align: center;
+        transition: all 0.5s ease;
+        &:hover {
+            background-color: $thirdColor;
+            color: $secondColor;
+            cursor: pointer;
+        }
+    }
+}
+
+.line {
+    display: flex;
+    height: 90px;
+    background-color: rgba(188, 236, 48, 1);
+    z-index: 2;
+}
+
+.about {
+    padding-top: 94px;
+    padding-bottom: 96px;
+    background-color: $secondColor;
+    position: relative;
+    &__star {
+        position: absolute;
+        &_1 {
+            left: 25px;
+            top: 770px;
+        }
+
+        &_2 {
+            left: 40px;
+            top: 822px;
+        }
+
+        &_big {
+            right: -142px;
+            top: 77px;
+        }
+    }
+
+    &__header {
+        margin-bottom: 24px;
+        color: $thirdColor;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        text-align: left;
+    }
+
+    &__text {
+        margin-bottom: 72px;
+        color: $thirdColor;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+    }
+
+    &__box {        
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 32px;
+        z-index: 2;
+        &_top {
+            align-items: start;
+        }
+
+        &_bottom {
+            align-items: end;
+        }
+    }
+
+    &__card {
+        background-color: $thirdColor;
+        border-radius: 30px;
+        width: 378px;
+        height: 473px;
+        transition: scale 0.5s ease;
+        position: relative;
+        &_medium {
+            height: 512px;
+        }
+
+        &_big {
+            height: 551px;
+        }
+
+        &:hover {
+            scale: 110%;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 314px;
+        border-radius: 30px;
+        &_1 {
+            background-image: url(./img/card-1.png);
+        }
+
+        &_2 {
+            background-image: url(./img/card-2.png);
+        }
+
+        &_3 {
+            background-image: url(./img/card-3.png);
+        }
+        
+        &_4 {
+            background-image: url(./img/card-4.png);
+        }
+
+        &_5 {
+            background-image: url(./img/card-5.png);
+        }
+
+        &_6 {
+            background-image: url(./img/card-6.png);
+        }
+    }
+
+    &__data {                
+        padding: 40px 32px 36px 32px;
+    }
+
+    &__number {
+        display: block;
+        width: fit-content;
+        height: 36px;
+        border-radius: 52px;
+        background: rgba(247, 247, 247, 1);
+        padding: 8px 16px 10px 16px;
+        color: rgba(32, 32, 39, 1);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 110%;
+        text-align: left;
+        margin-bottom: 16px;
+        &::before {
+            position: absolute;
+            content: "";
+            inset: 0;
+        }
+    }
+
+    &__name {
+        color: $secondColor;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        text-align: left;
+    }
+}
