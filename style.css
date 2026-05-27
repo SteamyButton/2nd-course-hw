@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+a,
+input,
+button,
+select {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 710px;
+  background-color: rgb(225, 255, 143);
+  padding-top: 196px;
+  padding-bottom: 156px;
+  overflow: hidden;
+}
+.heading__star {
+  position: absolute;
+}
+.heading__star_1 {
+  left: 63px;
+  top: 94px;
+}
+.heading__star_2 {
+  left: 156px;
+  top: 69px;
+}
+.heading__star_3 {
+  right: 455px;
+  bottom: 135px;
+}
+.heading__star_4 {
+  right: 344px;
+  bottom: 59px;
+}
+.heading__star_big {
+  right: -488px;
+  top: -333px;
+}
+.heading__header {
+  color: rgb(32, 32, 39);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  text-align: left;
+  margin-bottom: 24px;
+}
+.heading__text {
+  color: rgb(32, 32, 39);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  margin-bottom: 48px;
+}
+.heading__button {
+  width: 247px;
+  height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 28px 16px 28px;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background-color: rgb(32, 32, 39);
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+.heading__button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(32, 32, 39);
+  cursor: pointer;
+}
+
+.line {
+  display: flex;
+  height: 90px;
+  background-color: rgb(188, 236, 48);
+  z-index: 2;
+}
+
+.about {
+  padding-top: 94px;
+  padding-bottom: 96px;
+  background-color: rgb(32, 32, 39);
+  position: relative;
+}
+.about__star {
+  position: absolute;
+}
+.about__star_1 {
+  left: 25px;
+  top: 770px;
+}
+.about__star_2 {
+  left: 40px;
+  top: 822px;
+}
+.about__star_big {
+  right: -142px;
+  top: 77px;
+}
+.about__header {
+  margin-bottom: 24px;
+  color: rgb(255, 255, 255);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  text-align: left;
+}
+.about__text {
+  margin-bottom: 72px;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}
+.about__box {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  z-index: 2;
+}
+.about__box_top {
+  align-items: start;
+}
+.about__box_bottom {
+  align-items: end;
+}
+.about__card {
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  width: 378px;
+  height: 473px;
+  transition: scale 0.5s ease;
+  position: relative;
+}
+.about__card_medium {
+  height: 512px;
+}
+.about__card_big {
+  height: 551px;
+}
+.about__card:hover {
+  scale: 110%;
+}
+.about__image {
+  width: 100%;
+  height: 314px;
+  border-radius: 30px;
+}
+.about__image_1 {
+  background-image: url(./img/card-1.png);
+}
+.about__image_2 {
+  background-image: url(./img/card-2.png);
+}
+.about__image_3 {
+  background-image: url(./img/card-3.png);
+}
+.about__image_4 {
+  background-image: url(./img/card-4.png);
+}
+.about__image_5 {
+  background-image: url(./img/card-5.png);
+}
+.about__image_6 {
+  background-image: url(./img/card-6.png);
+}
+.about__data {
+  padding: 40px 32px 36px 32px;
+}
+.about__number {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 36px;
+  border-radius: 52px;
+  background: rgb(247, 247, 247);
+  padding: 8px 16px 10px 16px;
+  color: rgb(32, 32, 39);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.about__number::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+}
+.about__name {
+  color: rgb(32, 32, 39);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  text-align: left;
+}/*# sourceMappingURL=style.css.map */
