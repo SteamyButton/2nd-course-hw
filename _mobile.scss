@@ -1,0 +1,78 @@
+@media (max-width: 767px) {
+    .heading {
+        .center {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        height: 649px;
+        padding-top: 147px;
+        padding-bottom: 131px;
+        align-items: center;
+        &__star {
+            &_1 {
+                width: 35px;        
+                left: 37px;
+                top: 97px;
+            }
+
+            &_2 {
+                width: 21px;
+                left: 91px;
+                top: 64px;
+            }
+
+            &_3 {
+                width: 18px;        
+                right: 86px;
+                bottom: 74px;
+            }
+
+            &_4 {
+                width: 39px;
+                height: 41px;                
+                right: 34px;
+                bottom: 28px;
+            }
+
+            &_big {
+                width: 301px;
+                height: 274px;
+                right: -112px;
+                top: -103px;        
+            }
+
+            &_ext {
+                display: none;        
+            }
+        }
+
+        &__header {
+            font-size: 40px;
+            line-height: 49px;
+            text-align: center;
+        }
+
+        &__text {
+            width: 296px;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            margin-bottom: 36px;
+        }
+
+        &__button {
+            width: 285px;
+            height: 55px;
+            font-size: 16px;
+        }
+    }
+
+    .line {
+        height: 51px;
+    }
+
+    .about {
+        display: none;
+    }
+}
