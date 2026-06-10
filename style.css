@@ -66,6 +66,10 @@ body {
   right: -488px;
   top: -333px;
 }
+.heading__star_ext {
+  right: -488px;
+  top: -333px;
+}
 .heading__header {
   color: rgb(32, 32, 39);
   font-size: 64px;
@@ -76,6 +80,7 @@ body {
 }
 .heading__text {
   color: rgb(32, 32, 39);
+  width: 720px;
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
@@ -100,11 +105,6 @@ body {
   text-align: center;
   transition: all 0.5s ease;
 }
-.heading__button:hover {
-  background-color: rgb(255, 255, 255);
-  color: rgb(32, 32, 39);
-  cursor: pointer;
-}
 
 .line {
   display: flex;
@@ -118,6 +118,7 @@ body {
   padding-bottom: 96px;
   background-color: rgb(32, 32, 39);
   position: relative;
+  overflow: hidden;
 }
 .about__star {
   position: absolute;
@@ -232,4 +233,77 @@ body {
   font-weight: 700;
   line-height: 39px;
   text-align: left;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .heading__button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(32, 32, 39);
+    cursor: pointer;
+  }
+}
+@media (max-width: 767px) {
+  .heading .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .heading {
+    height: 649px;
+    padding-top: 147px;
+    padding-bottom: 131px;
+    align-items: center;
+  }
+  .heading__star_1 {
+    width: 35px;
+    left: 37px;
+    top: 97px;
+  }
+  .heading__star_2 {
+    width: 21px;
+    left: 91px;
+    top: 64px;
+  }
+  .heading__star_3 {
+    width: 18px;
+    right: 86px;
+    bottom: 74px;
+  }
+  .heading__star_4 {
+    width: 39px;
+    height: 41px;
+    right: 34px;
+    bottom: 28px;
+  }
+  .heading__star_big {
+    width: 301px;
+    height: 274px;
+    right: -112px;
+    top: -103px;
+  }
+  .heading__star_ext {
+    display: none;
+  }
+  .heading__header {
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+  }
+  .heading__text {
+    width: 296px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  .heading__button {
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+  }
+  .line {
+    height: 51px;
+  }
+  .about {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
