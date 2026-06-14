@@ -170,7 +170,8 @@ body {
   border-radius: 30px;
   width: 378px;
   height: 473px;
-  transition: scale 0.5s ease;
+  transform: scale(1);
+  transition: transform 0.5s ease;
   position: relative;
 }
 .about__card_medium {
@@ -178,9 +179,6 @@ body {
 }
 .about__card_big {
   height: 551px;
-}
-.about__card:hover {
-  scale: 110%;
 }
 .about__image {
   width: 100%;
@@ -274,7 +272,7 @@ body {
 .games__box {
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: 32px;
   z-index: 2;
 }
 .games__card {
@@ -388,6 +386,9 @@ body {
     background-color: rgb(255, 255, 255);
     color: rgb(32, 32, 39);
     cursor: pointer;
+  }
+  .about__card:hover {
+    transform: scale(1.1);
   }
   .games__button:hover {
     background-color: rgb(255, 255, 255);
