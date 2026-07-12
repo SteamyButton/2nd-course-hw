@@ -42,11 +42,11 @@
         </div>        
         <h1 class="heading__header">Добро пожаловать<br> на мой сайт мини-игр</h1>
         <p class="heading__text">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <span class="bold">«Поехали!»</span> и <span class="bold">приступай</span>.</p>
-        <button class="heading__button">Поехали!</button>
+        <button class="heading__button" onclick="scrollToAbout()">Поехали!</button>
     </section>    
     <section class="line">
     </section>
-    <section class="about center">
+    <section id="about" class="about center">
         <div>
             <svg class="about__star about__star_1" viewBox="0 0 34.1729 34.1727" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34.172852" height="34.172729" fill="none">
                 <path d="M15.6696 0L19.9018 11.4374L31.3392 15.6696L19.9018 19.9018L15.6696 31.3392L11.4374 19.9018L0 15.6696L11.4374 11.4374L15.6696 0ZM12.2157 12.2157L2.88154 15.6696L12.2157 19.1236L15.6696 28.4577L19.1236 19.1236L28.4577 15.6696L19.1236 12.2157L15.6696 2.88154L12.3753 11.7844L12.2157 12.2157Z" fill="rgb(188,236,48)" fill-rule="evenodd" transform="matrix(0.995484,0.0949294,-0.0949294,0.995484,2.9751,0)" />
@@ -136,7 +136,7 @@
                 <div class="games__data">
                     <h3 class="games__name">Угадай число</h3>
                     <p class="games__text games__text_1">Попробуй угадать случайное число от 1 до 100.</p>
-                    <button class="games__button">Играть!</button>
+                    <button class="games__button" onclick="guessNum()">Играть!</button>
                 </div>
                 <div class="games__image games__image_1">
                 </div>
@@ -147,14 +147,14 @@
                 <div class="games__data">
                     <h3 class="games__name">Простая арифметика</h3>
                     <p class="games__text">Попробуй решить простые арифметические задачи.</p>
-                    <button class="games__button">Играть!</button>
+                    <button class="games__button" onclick="simpleMath()">Играть!</button>
                 </div>
             </article>
             <article id="game_3" class="games__card">                
                 <div class="games__data">
                     <h3 class="games__name games__name_3">Переверни текст</h3>
                     <p class="games__text">Попробуй ввести текст, который будет перевернут.</p>
-                    <button class="games__button">Играть!</button>
+                    <button class="games__button" onclick="reverseText()">Играть!</button>
                 </div>
                 <div class="games__image games__image_3">
                 </div>
