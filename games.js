@@ -1,16 +1,25 @@
 //Игра № 1. Угадай число
 function guessNum() {
-    const num = Math.floor(Math.random() * 100);
+    const num = Math.floor(Math.random() * 100) + 1;
     let guess;
 
     do {
-        guess = +prompt('Угадай число от 1 до 100');
+        const input = prompt('Угадай число от 1 до 100');
 
-        if (num < guess) {
+        if (input === null) {
+            return;
+        }
+
+        guess = +input
+
+        if (isNaN(guess)) {
+            alert('Введите число!');
+        } else if (num < guess) {
             alert('Загаданное число меньше');
         } else if (num > guess) {
             alert('Загаданное число больше');
         }
+
     } while (num !== guess);
 
     alert("Поздравляем! Вы угадали число!");
@@ -18,24 +27,29 @@ function guessNum() {
 
 //Игра № 2. Простая арифметика
 function simpleMath() {
-    const a = Math.floor(Math.random() * 100);
-    const b = Math.floor(Math.random() * 100);
+    let a = Math.floor(Math.random() * 10);
+    const b = Math.floor(Math.random() * 10);
     const operations = ['+', '-', '*', '/'];
     const operation = operations[Math.floor(Math.random() * operations.length)];
     let correctAnswer;
 
     switch (operation) {
-        case "+":
+        case '+':
             correctAnswer = a + b;
             break;
-        case "-":
+
+        case '-':
             correctAnswer = a - b;
             break;
-        case "*":
+
+        case '*':
             correctAnswer = a * b;
             break;
-        case "/":
-            correctAnswer = a / b;
+
+        case '/':
+            const result = Math.floor(Math.random() * 9) + 1;
+            a = result * b;
+            correctAnswer = result;
             break;
     }
     
@@ -54,6 +68,51 @@ function reverseText() {
     let textInReverse = inputText.split('').reverse().join('');
 
     alert(`${textInReverse}`);
+}
+
+//Игра № 4. Камень, ножницы, бумага
+const shootComp = ['камень', 'ножницы', 'бумага'];
+
+function shootGame() {
+    const computerChoice = shootComp[Math.floor(Math.random() * shootComp.length)];
+    const userChoice = prompt('Введите: камень, ножницы или бумага').toLowerCase();
+    const messageWin = `Компьютер выбрал ${computerChoice}. Ты победил`;
+    const messageLose = `Компьютер выбрал ${computerChoice}. Ты проиграл`;
+    console.log("Компьютер:", computerChoice);
+
+    if (computerChoice === userChoice) {
+        alert('Ничья');
+        return;
+    }
+
+    switch (userChoice) {
+        case 'камень':
+            if (computerChoice === 'ножницы') {
+                alert(messageWin);
+            } else {
+                alert(messageLose);
+            }
+            break;
+
+        case 'ножницы':
+            if (computerChoice === 'бумага') {
+                alert(messageWin);
+            } else {
+                alert(messageLose);
+            }
+            break;
+
+        case 'бумага':
+            if (computerChoice === 'камень') {
+                alert(messageWin);
+            } else {
+                alert(messageLose);
+            }
+            break;
+
+        default:
+            alert('Нужно ввести: камень, ножницы или бумага');
+    }
 }
 
 //Игра № 5. Простая викторина 
